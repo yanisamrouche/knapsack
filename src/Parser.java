@@ -25,9 +25,9 @@ public class Parser {
     public static double[][] loadData(String filepath) throws IOException {
 
         List<String> data = readDataFile(filepath);
-        Knapsack.bagCapacity = Integer.parseInt(data.get(0));
+        KnapsackBranchAndBound.bagCapacity = Integer.parseInt(data.get(0));
         data = data.subList(1,data.size());
-        Knapsack.nbOfItems = data.size();
+        KnapsackBranchAndBound.nbOfItems = data.size();
         double[] profits = new double[data.size()];
         double[] weights = new double[data.size()];
         for(int i=0; i < data.size(); i++){
@@ -35,8 +35,8 @@ public class Parser {
             weights[i] = Integer.parseInt(s[0]);
             profits[i] = Integer.parseInt(s[1]);
         }
-        double[][] matrix = new double[3][Knapsack.nbOfItems];
-        for(int i=0; i < Knapsack.nbOfItems; i++){
+        double[][] matrix = new double[3][KnapsackBranchAndBound.nbOfItems];
+        for(int i = 0; i < KnapsackBranchAndBound.nbOfItems; i++){
             matrix[0][i] = profits[i];
             matrix[1][i] = weights[i];
             matrix[2][i] = profits[i]/weights[i];

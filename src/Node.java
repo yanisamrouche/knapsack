@@ -1,7 +1,7 @@
 public class Node {
 
-    double upper_bound ; // borne sup (avec fraction) meilleur des cas
-    double lower_bound ; // le cout (sans fraction) pire des cas
+    double upper_bound ; // borne sup (avec fraction) meilleur des cas (U)
+    double lower_bound ; // le cout (sans fraction) pire des cas (C)
     int level; // niveau du sommet dans l'arbre
     boolean selected ; // 1 si on prend l'objet 0 sinon
     double total_value ; // la valeur des objets dans le sac
