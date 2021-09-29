@@ -6,9 +6,6 @@ public class Knapsack {
     public static int bagCapacity;
     public static int nbOfItems;
 
-
-    /* ======================================================================= */
-
     public static double upperBound(double total_value, double total_weight, int num, Item[] items){
         double value = total_value;
         double weight = total_weight;
@@ -128,9 +125,6 @@ public class Knapsack {
 
     }
 
-    /* $ javac Knapsack.java
-       $ java Knapsack [chemin_vers_le_fichier_sac]
-     */
 
 
 
