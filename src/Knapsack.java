@@ -122,7 +122,9 @@ public class Knapsack {
                 System.out.print("0 ");
         }
         System.out.println();
+        System.out.println("====================================================");
         System.out.println("La valeur optimale est de : "+(-final_lower_bound));
+        System.out.println("====================================================");
 
     }
 
